@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Add New"
+        android:icon="@drawable/ic_baseline_add_24"
+        android:id="@+id/add_new"
+        />
+    <item
+        android:title="Offers"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:id="@+id/offers"
+        android:checked="true"
+        />
+    <item
+        android:title="History"
+        android:icon="@drawable/ic_baseline_add_24"
+        android:id="@+id/history"
+        />
+    <item
+        android:title="My Account"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:id="@+id/account"
+        />
+
+</menu>

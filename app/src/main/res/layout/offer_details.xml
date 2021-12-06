@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/white"
+
+        >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/design_default_color_primary"
+
+            >
+            <ImageView
+                android:layout_width="40dp"
+                android:id="@+id/back_details"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Offer Details"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginLeft="65dp"
+                android:letterSpacing=".04"
+                android:textSize="17dp"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_baseline_account_balance_wallet_24"
+                android:text="0.24 ₹ "
+                android:id="@+id/wallet_money"
+                android:textColor="@color/white"
+                android:layout_gravity="right|center"
+                android:gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                />
+        </FrameLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Anshul is having this reward "
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:id="@+id/message"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        >
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".4"
+        android:text="Company Name"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:background="@color/design_default_color_primary"
+
+        />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".6"
+            android:id="@+id/title"
+            android:text="Wipro"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@color/design_default_color_primary"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/background"
+        android:weightSum="2"
+        android:layout_margin="20dp"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/block_shape"
+            android:backgroundTint="@color/white"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp"
+            android:orientation="vertical"
+            android:layout_marginRight="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start Date"
+                android:textColor="#A9000000"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:paddingTop="5dp"
+                android:text="12-09-2021"
+                android:textColor="@color/black"
+                android:id="@+id/offer_start_date"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/block_shape"
+            android:backgroundTint="@color/white"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp"
+            android:orientation="vertical"
+            android:id="@+id/offer_end_date"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expire Date"
+                android:textColor="#A9000000"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:paddingTop="5dp"
+                android:textStyle="bold"
+                android:text="12-09-2021"
+                android:textColor="@color/black"
+                android:layout_gravity="bottom"
+
+                android:id="@+id/offer_end_date_text"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="370dp">
+
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="370dp"
+            android:background="@color/background"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/slider"/>
+
+        <me.relex.circleindicator.CircleIndicator
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_marginTop="190dp"
+            android:layout_gravity="center"
+            android:id="@+id/circleindicator"
+            />
+    </FrameLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1.7"
+            android:background="@color/white"
+            android:padding="5dp"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".7"
+                android:text="Price :"
+                android:textSize="15dp"
+                android:id="@+id/price_text"
+                android:gravity="center"
+                android:textColor="#FF5722"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="700 INR"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:id="@+id/paying_price"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buy Now"
+        android:layout_margin="20dp"
+        android:id="@+id/buy_now"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:id="@+id/imageattached"
+        android:scaleType="fitXY"
+        android:src="@drawable/scratch"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:visibility="gone"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Image"
+        android:background="@color/design_default_color_primary"
+        android:layout_margin="20dp"
+        android:id="@+id/show_attachment"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:textColor="@color/white"
+
+    />
+</LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

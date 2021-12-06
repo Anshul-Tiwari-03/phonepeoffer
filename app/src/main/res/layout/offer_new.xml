@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".offers_new.offer_new"
+    android:background="@color/white">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:text="A new Offer Great !"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:layout_margin="10dp"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:src="@drawable/dotted"
+        android:layerType="software"
+        android:layout_marginTop="60dp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="80dp"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Offer will Apply for"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:background="@color/black"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+
+                >
+
+                <EditText
+
+                    android:id="@+id/title_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/black"
+                    android:layout_margin="1dp"
+                    android:padding="5dp"
+                    android:textColorHint="#BFBFBF"
+                    android:hint="Enter the company tag for which offer is"
+                    android:background="@color/white"
+                    />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Add Images"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:drawableLeft="@drawable/ic_baseline_add_24"
+                android:id="@+id/add_offer"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:id="@+id/images_section"
+                android:orientation="horizontal"
+                android:background="@drawable/border_shape"
+                android:layout_margin="10dp"
+                >
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:weightSum="2"
+                android:layout_margin="10dp"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/block_shape"
+                    android:backgroundTint="#F6F5F5"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="5dp"
+                    android:orientation="vertical"
+                    android:layout_marginRight="10dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Start Date"
+                        android:textColor="#A9000000"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:paddingTop="5dp"
+                        android:text="12-09-2021"
+                        android:textColor="@color/black"
+                        android:id="@+id/offer_start_date"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/block_shape"
+                    android:backgroundTint="#F6F5F5"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="5dp"
+                    android:orientation="vertical"
+                    android:id="@+id/offer_end_date"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Expire Date"
+                        android:textColor="#A9000000"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:paddingTop="5dp"
+                        android:textStyle="bold"
+                        android:text="12-09-2021"
+                        android:textColor="@color/black"
+                        android:layout_gravity="bottom"
+
+                        android:id="@+id/offer_end_date_text"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price details (  INR   )"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:weightSum="2.4"
+                >
+                <LinearLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:orientation="vertical"
+
+                    >
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:hint="0.0"
+                        android:textColorHint="#D1CECE"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:background="@drawable/block_shape"
+                        android:backgroundTint="#F6F5F5"
+                        android:inputType="number"
+                        android:id="@+id/amount_without_tax"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="10 % tax will be charged"
+                        android:textColor="@color/black"
+                        android:paddingLeft="10dp"
+                        android:gravity="center_horizontal"
+                        android:textSize="10dp"
+                        />
+                </LinearLayout>
+
+
+
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".4"
+                    android:src="@drawable/transact"
+                    />
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:orientation="vertical"
+
+                    >
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:text="0.0"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:background="@drawable/block_shape"
+                        android:backgroundTint="#F6F5F5"
+                        android:editable="false"
+                        android:id="@+id/amount_with_tax"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Receiving amount"
+                        android:textColor="@color/black"
+                        android:paddingLeft="10dp"
+                        android:textSize="10dp"
+                        android:gravity="center_horizontal"
+                        />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_shape"
+                android:weightSum="1.7"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".7"
+                    android:text="Code :"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="#787777"
+
+                    />
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:hint="***********"
+                    android:textColorHint="#636363"
+                    android:gravity="center"
+                    android:maxLength="25"
+                    android:id="@+id/code"
+                    android:backgroundTint="@color/white"
+                    />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:background="@drawable/block_shape"
+                android:backgroundTint="#F4BAB6"
+                android:layout_margin="10dp"
+                android:text="Add An Attachment"
+                android:textColor="#5C5353"
+                android:gravity="center"
+                android:padding="5dp"
+                android:id="@+id/code_attachment"
+
+                />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/terms_policy"
+                android:paddingLeft="20dp"
+                android:layout_margin="10dp"
+                android:textColor="@color/black"
+                android:id="@+id/details_chechbox"
+                />
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/policies_two"
+                android:paddingLeft="20dp"
+                android:layout_margin="10dp"
+                android:layout_marginTop="0dp"
+                android:id="@+id/violation_checkbox"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+    </ScrollView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add This Offer"
+        android:layout_gravity="bottom"
+        android:background="@color/design_default_color_primary"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:id="@+id/submit"
+        />
+</FrameLayout>

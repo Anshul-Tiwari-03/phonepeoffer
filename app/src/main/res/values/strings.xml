@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">phonepeoffers</string>
+    <string name="terms_policy">All the details are correctly filled by me and I accept all the company policies.</string>
+    <string name="policies_two">If offer is availed then I will make sure I don\'t use it. If I avail I accpet legal action to be made to me.</string>
+    <string name="first_scree_str">Grab the latest coupon codes or sell them to earn more</string>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_width="155dp"
+    android:layout_height="180dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card"
+    android:layout_margin="10dp"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="4dp"
+    app:cardMaxElevation="10dp"
+    android:backgroundTint="#ffff"
+    android:elevation="20dp"
+
+    android:background="@android:color/transparent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/cover_image"
+            android:src="@drawable/scratch"
+            android:paddingRight="2dp"
+            android:paddingLeft="2dp"
+            android:paddingTop="3dp"
+            android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/expire_date"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+
+        android:background="@drawable/block_shape"
+        android:backgroundTint="#F1D2C9"
+        android:text="Expires on 22-04"
+        android:textColor="@color/black"
+        android:textSize="9dp"
+        android:textStyle="bold"
+        android:letterSpacing="0.06"
+        android:layout_marginBottom="15dp"
+        android:layout_gravity="center|bottom"/>
+
+</androidx.cardview.widget.CardView>

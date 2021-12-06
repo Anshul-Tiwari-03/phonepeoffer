@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="105dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card"
+    app:cardCornerRadius="4dp"
+    android:backgroundTint="#ffff"
+    android:elevation="20dp"
+
+    android:background="@android:color/transparent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="15dp"
+        android:paddingBottom="25dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="20dp"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/scratch"
+            app:civ_border_color="#FF000000"
+            android:id="@+id/history_image"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/history_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:text="Sell"
+            android:textSize="18sp"
+
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bitcoin"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="70dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/history_title"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12-10-2021"
+            android:textColor="#8E8989"
+            android:layout_marginLeft="70dp"
+            android:textSize="14sp"
+
+            android:layout_gravity="bottom"
+            android:id="@+id/history_date"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price 550 INR"
+            android:textColor="#8E8989"
+            android:layout_marginLeft="70dp"
+            android:textSize="16sp"
+            android:layout_gravity="right"
+            android:id="@+id/history_price"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tax 50 INR"
+            android:textColor="#8E8989"
+            android:layout_marginLeft="70dp"
+            android:textSize="16sp"
+            android:layout_gravity="center|right"
+            android:id="@+id/history_tax"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total 500 INR"
+            android:textColor="#8E8989"
+            android:layout_marginLeft="70dp"
+            android:textSize="16sp"
+            android:layout_gravity="bottom|right"
+            android:id="@+id/history_total"
+            />
+    </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#E8E7E7"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+</androidx.cardview.widget.CardView>
